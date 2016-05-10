@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="http://j2.58cdn.com.cn/m58/njs/lib/zepto.min.js"></script>
+  <script src="http://j2.58cdn.com.cn/m58/njs/lib/esl_zepto.min.js"></script>
+  <!-- esl代理到本地没有压缩的源码 -->
+  <script>
+    var _rootDomainNoProtocol = "m.58.com";
+    var _rootDomain = "http://m.58.com";
+    var _jsRootPath = "http://static.58.com/m58/m3/js";
+    var _keyfrom = "list";
+    var __device = "android";
+    __device = "iphone";
+    try {
+      var ____json4fe = {
+        "catentry": [{
+          "dispid": "1",
+          "name": "房产信息",
+          "listname": "house"
+        }, {
+          "dispid": "12",
+          "name": "二手房",
+          "listname": "ershoufang"
+        }],
+        "locallist": [{
+          "dispid": "1",
+          "name": "北京",
+          "listname": "bj"
+        }],
+        "modules": "list"
+      };
+      ____json4fe.sid = '107977464191696568135263403';
+      ____json4fe.sessionid = '8a7d6b01-9d2d-4991-8375-ecab8234afdc';
+      ____json4fe.smsc =
+        '3f2dd2de9529e633a84e2b4ddd184a718421edc43d2ee1bfa990b868f4a7972e8b1c4d7607c657060a9deeacdcaff3cfeac9f13072ba668884aba7f3eaa087f1d21b32cac50dadc01740342045d8cdebb1a4e46c91f239fe6426c54071d4f31a20d77678a42587aaeec9a035bbc12a472de266850a654e162c221f82fd291e5ccb0969a6dd29852a29e1adc8f93543c4c8e75e2cefacf095e838157df43a3dfdd51bb31c722a82ef6b2ba65511a309b1fdec8b675faaaad17f0a4851a1d8c4d81732eeccaaa9648ccc80bbe099f1e2763448fe9a687654108aac663c166a8d911f2d7731679fa315c79f3d9454e01ea82d389f16f5e62a3972d6f0697acc52c5';
+      var selectValue = '';
+      var searchKey = '';
+    } catch (e) {};
+  </script>
+</head>
+
+<body>
+  <script>
+    require.config({
+      baseUrl: "http://j2.58cdn.com.cn/m58/njs/",
+      map: {
+        "pkg/house/ershoufang_list": {
+          "test": "mod/common"
+        }
+      }
+    });
+    require(['pkg/house/ershoufang_list'], function() {
+      console.log('pkg ershoufang_list callback')
+    });
+  </script>
+</body>
+
+</html>
